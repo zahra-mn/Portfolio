@@ -1,0 +1,71 @@
+#custom-btn {
+  /* Remove default background and set up border */
+  background-color: transparent;
+  border: 2px solid #3498db; /* Customize this color */
+  color: #3498db; /* Customize this color for the text to match the border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+#custom-btn:hover {
+  /* Optional: Change color on hover */
+  background-color: #3498db; /* Customize this to the same border color for filled effect */
+  color: white; /* Customize text color on hover */
+}
+
+#btn-clr-p1 {
+  /* Remove default background and set up border */
+  background-color: transparent;
+  border: 2px solid #0b945f; /* Customize this color */
+  color: #0b945f; /* Customize this color for the text to match the border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+#btn-clr-p1:hover {
+  /* Optional: Change color on hover */
+  background-color: #0b945f; /* Customize this to the same border color for filled effect */
+  color: white;
+}
+
+#btn-clr-p2 {
+  /* Remove default background and set up border */
+  background-color: transparent;
+  border: 2px solid #61079d; /* Customize this color */
+  color: #61079d; /* Customize this color for the text to match the border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+#btn-clr-p2:hover {
+  /* Optional: Change color on hover */
+  background-color: #61079d; /* Customize this to the same border color for filled effect */
+  color: white;
+}
+
+.custom-text {
+  color: #0b945f; /* Replace with your desired color */
+  font-weight: bold;
+}
+
+.custom-text1 {
+  color: #61079d; /* Replace with your desired color */
+  font-weight: bold;
+}
+
+#img1 {
+  height: 400px;
+  width: 900px;
+}
+
+.card {
+  cursor: pointer; /* Show hand cursor on hover */
+}
