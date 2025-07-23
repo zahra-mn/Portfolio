@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Mobile App Design for Construction Supervision Reporting - Zahra
+      Mohammadinejad
+    </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Spectral:wght@400;700&family=Inder:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="project1.css" />
+    <style>
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(30, 155, 190, 0.06);
+        transition: box-shadow 0.2s;
+      }
+      #main-nav a.flash {
+        animation: nav-flash 0.4s;
+        background: var(--brand-teal, #1e9bbe);
+        color: #fff !important;
+        border-radius: 4px;
+      }
+      @keyframes nav-flash {
+        0% {
+          background: var(--brand-teal, #1e9bbe);
+          color: #fff;
+        }
+        80% {
+          background: var(--brand-teal, #1e9bbe);
+          color: #fff;
+        }
+        100% {
+          background: transparent;
+          color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header>
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo-section">
+            <img src="logo.png" alt="Zahra Mohammadinejad Logo" />
+            <p>Product Designer</p>
+          </div>
+
+          <!-- Hamburger Icon -->
+          <div
+            class="hamburger"
+            id="hamburger-menu"
+            aria-label="Open menu"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- Navigation -->
+          <nav id="main-nav">
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Images Grid -->
+      <section class="hero-images">
+        <div class="hero-images-container">
+          <img src="hero-images.png" alt="Project showcase images" />
+        </div>
+      </section>
+
+      <!-- Main Content -->
+      <main>
+        <div class="main-content">
+          <!-- Project Overview Section -->
+          <section class="section">
+            <div class="section-layout">
+              <div class="section-header">
+                <h2 class="section-title">PROJECT Overview</h2>
+              </div>
+
+              <div class="section-content">
+                <div class="mb-8">
+                  <h1 class="page-title">
+                    Mobile App Design for Construction Supervision Reporting
+                  </h1>
+                  <p class="subtitle">Building Engineering Organization</p>
+                </div>
+
+                <!-- Project Details Grid -->
+                <div class="details-grid">
+                  <div class="detail-item">
+                    <h3 class="detail-label">ROLE</h3>
+                    <p class="detail-text">System Analyst / Product Designer</p>
+                  </div>
+                  <div class="detail-item">
+                    <h3 class="detail-label">TIMELINE</h3>
+                    <p class="detail-text">3 Months</p>
+                  </div>
+                  <div class="detail-item">
+                    <h3 class="detail-label">TEAM</h3>
+                    <p class="detail-text">
+                      Product designer/System analyst(me)/visual
+                      designer(1)/Back-end(2)/front-end developer(1)
+                    </p>
+                  </div>
+                  <div class="detail-item">
+                    <h3 class="detail-label">TOOLS</h3>
+                    <p class="detail-text">
+                      <span class="font-bold">User Research:</span> Google
+                      Forms<br />
+                      <span class="font-bold">Design:</span> Figma, Visio<br />
+                      <span class="font-bold">User Testing:</span> In-person,
+                      Google Meet, WhatsApp
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Project Summary -->
+                <div class="content-section max-width-749">
+                  <h3 class="content-title">Project Summary</h3>
+                  <p class="body-text">
+                    The Building Engineering Organization is the official
+                    authority that oversees and authorizes all buildings in the
+                    province. Anyone who is going to construct a building must
+                    first get their permits from the Building Engineering
+                    Organization. As the organization provides supervision
+                    through the permits, the organization has many steps in
+                    assuring safety and compliance with quality.
+                    <br /><br />
+                    Over the years, there were some efforts at digitizing
+                    internal processes. However, the supervision has many tasks
+                    that are the nature of the field which presented key
+                    problems that could not be resolved due to workflow times,
+                    number of errors and manual, offline reporting. There was a
+                    centralized solution from the past but there were no mobile
+                    methods for data collection and reporting while in the
+                    field.
+                  </p>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="content-section max-width-730">
+                  <h3 class="content-title">Our Mission</h3>
+                  <p class="body-text">
+                    To digitize and streamline the on-site reporting of
+                    violations and technical issues, enabling real-time,
+                    location-based reporting by supervisors — regardless of time
+                    or place constraints.
+                  </p>
+                </div>
+
+                <!-- Core Project Recognized -->
+                <div class="content-section max-width-774">
+                  <h3 class="content-title">Core Project Recognized</h3>
+                  <p class="body-text mb-4">
+                    We identified a core problem in the needs assessment stage;
+                    legal obligations require supervisors to perform physical
+                    site inspections. Yet there were a few challenges related to
+                    physical inspections:
+                  </p>
+                  <div class="body-text">
+                    <p class="mb-4">
+                      1. Possibility of false reporting without someone actually
+                      visiting the site.
+                    </p>
+                    <p class="mb-4">
+                      2. Duplication of reporting (first on a paper version and
+                      then in the system) was wasted time.
+                    </p>
+                    <p>
+                      3. There was no transparency for the owner of a building
+                      that couldn't be able to verify if site visits occurred.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Project Objectives -->
+                <div class="content-section max-width-730">
+                  <h3 class="content-title">Project Objectives</h3>
+                  <p class="body-text mb-4">
+                    To design a mobile-first, location-based reporting system
+                    that would allow building supervisors to easily prepare
+                    their comprehensive, verified reports from the construction
+                    site. The objectives were:
+                  </p>
+                  <div class="body-text">
+                    <p class="mb-4">
+                      1. To create a mobile application with a high-quality user
+                      experience.
+                    </p>
+                    <p class="mb-4">
+                      2. To increase the speed and accuracy of field reports.
+                    </p>
+                    <p class="mb-4">
+                      3. To discourage false reporting without attending the
+                      site.
+                    </p>
+                    <p>
+                      4. To increase confidence in the oversight and quality
+                      assurance process for building owners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Problem Section -->
+          <section class="section">
+            <div class="section-layout">
+              <div class="section-header">
+                <h2 class="section-title">Problem</h2>
+              </div>
+
+              <div class="section-content max-width-710">
+                <!-- User Research -->
+                <div class="content-section">
+                  <h3 class="content-title">User Research</h3>
+                  <p class="body-text mb-12">
+                    Conducted extensive interviews with subject matter experts
+                    for reviewing existing supervisor reporting systems.
+                    <br /><br />
+                    Conducted interviews with field supervisors to establish
+                    practical workflows, pain points and needs.
+                    <br /><br />
+                    Conducted interviews with building owners to get their
+                    perspectives and needs.
+                    <br /><br />
+                    Consolidated findings and conducted legal analysis to ensure
+                    that the proposed UX is fully compliant with regulatory
+                    requirements.
+                  </p>
+                </div>
+
+                <!-- Current Workflow -->
+                <div class="content-section">
+                  <h3 class="content-title">
+                    Current Construction Supervision Workflow
+                  </h3>
+                  <p class="body-text mb-8">
+                    Based on user research and interviews, the table and
+                    flowchart below show the current construction supervision
+                    workflow and key stages.
+                  </p>
+
+                  <div class="mb-12" style="max-width: 648px">
+                    <img
+                      src="tableprocces1.png"
+                      alt="Workflow table"
+                      class="content-image mb-8"
+                    />
+                    <img
+                      src="proceedigram111.jpg"
+                      alt="Workflow flowchart"
+                      class="content-image"
+                    />
+                  </div>
+                </div>
+
+                <!-- Key Findings -->
+                <div class="content-section">
+                  <h3 class="content-title">Key Findings</h3>
+                  <p class="body-text mb-8">
+                    Our research uncovered several critical insights that
+                    highlight the need for a more efficient, compliant, and
+                    user-friendly solution
+                  </p>
+
+                  <div class="findings-container">
+                    <div class="finding-card">
+                      <p class="body-text">
+                        • 70% of supervisors expressed frustration with having
+                        to log into the website repeatedly to upload/permanent
+                        documents.
+                      </p>
+                    </div>
+                    <div class="finding-card">
+                      <p class="body-text">
+                        • Users expressed the desire for a quicker, easier and
+                        more dependable reporting procedure.
+                      </p>
+                    </div>
+                    <div class="finding-card">
+                      <p class="body-text">
+                        • 40% of reports did not have an actual site visit.
+                      </p>
+                    </div>
+                    <div class="finding-card">
+                      <p class="body-text">
+                        • Several users, as well as stakeholders, expressed
+                        concern over safety and compliance, requiring stronger
+                        oversight.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Problem Statement -->
+                <div class="content-section">
+                  <h3 class="content-title">Problem Statement</h3>
+                  <blockquote class="problem-statement">
+                    "
+                    <span class="highlight"
+                      >Field engineers and supervisors</span
+                    >
+                    require an improved, effective and reliable way to submit
+                    construction site reports. Current manual reports can be
+                    <span class="highlight"
+                      >inefficient, burdensome, repetitive and prone to
+                      mistakes</span
+                    >
+                    which could lead to
+                    <span class="highlight"
+                      >non-compliance and trust in safety processes</span
+                    >. A <span class="highlight">digital solution</span>
+                    is needed to collect and report
+                    <span class="highlight"
+                      >data accurately and in a timely fashion without
+                      taxing</span
+                    >
+                    the user with a complicated reporting experience for already
+                    busy on-site professionals."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ideation & Brainstorming Section -->
+          <section class="section">
+            <div class="section-layout">
+              <div class="section-header ideation">
+                <h2 class="section-title">Ideation & Brainstorming</h2>
+              </div>
+
+              <div class="section-content max-width-710">
+                <div class="content-section text-center">
+                  <img
+                    src="brainstorming.png"
+                    alt="Ideation process"
+                    class="content-image center"
+                  />
+                  <p class="body-text-large text-left">
+                    We conducted some brainstorming sessions with the
+                    stakeholders of the project and the UX team based on the
+                    user interviews, workflow analysis, and pain points. During
+                    these sessions, we generated ideas that addressed the three
+                    main areas of accuracy, trust, and ease-of-use, using "How
+                    Might We" questions to get the ideas flowing. We did some
+                    journey mapping with quick sketches, prioritizing must-have
+                    features such as real-time site verification, testing ideas
+                    for their user needs, and regulatory needs.
+                  </p>
+                </div>
+
+                <!-- Proposed Solution -->
+                <div class="content-section">
+                  <h3 class="content-title">Proposed Solution</h3>
+                  <p class="body-text-large">
+                    A smart mobile app that ensures supervisors can submit
+                    reports only when they are physically present on-site,
+                    verified through GPS and signal checks. To make the process
+                    secure and convenient, the app includes:
+                    <br /><br />
+                    Smart real-time location verification<br />
+                    Geo-fencing to restrict submissions within the approved site
+                    radius<br />
+                    Structured forms for easy and accurate inspection data
+                    entry<br />
+                    Photo and document uploads with secure timestamps for added
+                    credibility<br />
+                    OTP-based login for quick and secure access<br />
+                    Digital signatures for automated report authentication<br />
+                    Draft saving so users can complete reports in multiple
+                    sessions<br />
+                    Overdue notifications to remind users of pending
+                    submissions<br />
+                    Project overview dashboard for supervisors to see all
+                    upcoming and past reports at a glance
+                  </p>
+                </div>
+
+                <!-- Proposed Solution Workflow -->
+                <div class="content-section">
+                  <h3 class="content-title">Proposed Solution Workflow</h3>
+                  <div class="workflow-images">
+                    <img
+                      src="tableprocess2.png"
+                      alt="Proposed workflow diagram"
+                      class="content-image"
+                    />
+                    <img
+                      src="processdigram2.JPG"
+                      alt="Solution workflow"
+                      class="content-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Design Section -->
+          <section class="section">
+            <div class="section-layout">
+              <div class="section-header design">
+                <h2 class="section-title">Design</h2>
+              </div>
+
+              <div class="section-content max-width-717">
+                <!-- Wireframing & Ideation -->
+                <div class="content-section">
+                  <h3 class="content-title">Wireframing & Ideation</h3>
+                  <p class="body-text-large mb-12">
+                    I started with creating hand-drawn wireframes to rapidly
+                    visualize solutions, and allow the ideas to be shared with
+                    stakeholders for review and feedback. After many iterations
+                    and collaborative meetings, I created the wireframes of the
+                    UI before moving to UI Design.
+                  </p>
+                </div>
+
+                <!-- Wireframing and Stakeholder Feedback -->
+                <div class="content-section">
+                  <h4 class="subsection-title">
+                    Wireframing and Stakeholder Feedback
+                  </h4>
+                  <img
+                    src="wireframe.jpg"
+                    alt="Initial wireframes"
+                    class="content-image mb-12"
+                  />
+                </div>
+
+                <!-- Revised Wireframes -->
+                <div class="content-section">
+                  <h4 class="subsection-title">
+                    Revised Wireframes Incorporating Feedback
+                  </h4>
+                  <img
+                    loading="lazy"
+                    srcset="
+                      Revised Wireframes.png   100w,
+                      Revised Wireframes.png   200w,
+                      Revised Wireframes.png   400w,
+                      Revised Wireframes.png   800w,
+                      Revised Wireframes.png 1200w,
+                      Revised Wireframes.png 1600w,
+                      Revised Wireframes.png 2000w,
+                      Revised Wireframes.png
+                    "
+                    src="Revised Wireframes.png"
+                    class="wireframe-image aspect-087"
+                  />
+                </div>
+
+                <!-- Final UI -->
+                <div class="content-section">
+                  <h3 class="content-title">Final UI</h3>
+                  <p class="body-text-large mb-12">
+                    We iteratively improved the UI through collaborative design
+                    sessions and feedback loops, ensuring the final screens were
+                    practical, intuitive, and aligned with user expectations
+                  </p>
+
+                  <img
+                    loading="lazy"
+                    src="screens2.png"
+                    alt="Final UI designs"
+                    class="final-ui-image aspect-064"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Testing & Validation Section -->
+          <section class="section">
+            <div class="section-layout">
+              <div class="section-header testing">
+                <h2 class="section-title">Testing & Validation</h2>
+              </div>
+
+              <div class="section-content max-width-710">
+                <!-- Method -->
+                <div class="content-section">
+                  <h3 class="content-title">Method</h3>
+                  <p class="body-text-large" style="max-width: 503px">
+                    2-week pilot test with 8 real supervisors on actual projects
+                  </p>
+                </div>
+
+                <!-- Outcomes -->
+                <div class="content-section">
+                  <h3 class="content-title">Outcomes</h3>
+                  <div class="outcomes-list">
+                    <p class="body-text-large">
+                      Tracking reports submission time
+                      <span class="font-bold"
+                        >reduced from an average of 25 minutes to 8
+                        minutes</span
+                      >
+                    </p>
+                    <p class="body-text-large">
+                      <span class="font-bold">Over 80% satisfaction</span>
+                      from users of the app on their experience
+                    </p>
+                    <p class="body-text-large">
+                      All parties associated with buildings provided positive
+                      feedback on transparency and trust
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Lessons Learned -->
+                <div class="content-section">
+                  <h3 class="content-title">Lessons Learned</h3>
+                  <div class="lessons-list">
+                    <p class="body-text-large">
+                      Continuous engagement with end users and stakeholders is
+                      crucial to addressing complex and organizational issues.
+                    </p>
+                    <p class="body-text-large">
+                      Data integrity is key to oversight processes; technology
+                      must help ensure data integrity.
+                    </p>
+                    <p class="body-text-large">
+                      Designing for busy, low-tech users (e.g. engineers),
+                      requires a pared back design and circular testing
+                      approach.
+                    </p>
+                  </div>
+
+                  <p class="body-text-large">
+                    Overall, this was a successful case of integrating system
+                    analysis, UX/UI design, and technology development to solve
+                    important real-world problems. I am proud to have
+                    contributed to the redesign of an important process in the
+                    national construction supervisor model.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>Made by Zahra, ©2025</p>
+      </footer>
+    </div>
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger-menu");
+      const nav = document.getElementById("main-nav");
+      hamburger.addEventListener("click", function () {
+        nav.classList.toggle("open");
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          link.classList.add("flash");
+          setTimeout(() => link.classList.remove("flash"), 400);
+          nav.classList.remove("open");
+          const href = link.getAttribute("href");
+          if (
+            href === "#" ||
+            href === "" ||
+            href === window.location.pathname.split("/").pop()
+          ) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } else if (href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        });
+      });
+      document.addEventListener("click", function (e) {
+        if (window.innerWidth < 640 && nav.classList.contains("open")) {
+          if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+            nav.classList.remove("open");
+          }
+        }
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          nav.classList.remove("open");
+        }
+      });
+    </script>
+  </body>
+</html>

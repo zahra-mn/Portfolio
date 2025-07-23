@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uploading Soon</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Spectral:wght@400;700&family=Inder:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        background: #f5f5f5;
+      }
+      .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      h1 {
+        font-size: 4rem;
+        color: var(--brand-teal);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+      }
+      .dot {
+        display: inline-block;
+        font-size: 1em;
+        color: var(--brand-teal);
+        animation: bounce 1s infinite;
+      }
+      .dot:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .dot:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      .dot:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+      .back-btn {
+        margin-top: 2rem;
+        padding: 0.8em 2em;
+        font-size: 1.2rem;
+        background: var(--brand-teal);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: background 0.2s;
+        display: inline-block;
+      }
+      .back-btn:hover {
+        background: rgba(30, 155, 190, 0.8);
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header>
+        <div class="header-content">
+          <!-- Logo and Title -->
+          <div class="logo-section">
+            <img src="logo.png" alt="Zahra Mohammadinejad Logo" />
+            <p>Product Designer</p>
+          </div>
+          <!-- Hamburger Icon -->
+          <div
+            class="hamburger"
+            id="hamburger-menu"
+            aria-label="Open menu"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- Navigation -->
+          <nav id="main-nav">
+            <a href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+          </nav>
+        </div>
+      </header>
+      <div class="center-content" style="flex-direction: column">
+        <h1>
+          Uploading Soon
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+        </h1>
+        <a href="index.html" class="back-btn">Back to main page</a>
+      </div>
+    </div>
+  </body>
+</html>
