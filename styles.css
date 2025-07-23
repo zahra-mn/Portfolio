@@ -1,3 +1,75 @@
+.welcome-sub {
+  font-size: 1.3rem;
+  font-family: 'Karla', sans-serif;
+  color: #444;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+/* Reset and base styles */
+#welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+#welcome-overlay.fade-in {
+  opacity: 1;
+}
+#welcome-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+}
+.welcome-message {
+  font-size: 2.2rem;
+  font-family: 'Spectral', serif;
+  color: #222;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.3;
+}
+.welcome-message strong {
+  font-size: 2.8rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--brand-teal);
+}
+.welcome-sub {
+  font-size: 1.3rem;
+  font-family: 'Karla', sans-serif;
+  color: #444;
+  font-weight: 400;
+  display: block;
+}
+}
+.welcome-message strong {
+  font-size: 2.2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+.welcome-sub {
+  font-size: 1.3rem;
+  font-family: 'Karla', sans-serif;
+  color: #444;
+  font-weight: 400;
+  display: block;
+}
+}
+#welcome-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
 /* Reset and base styles */
 * {
   margin: 0;
