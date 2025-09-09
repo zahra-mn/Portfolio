@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Case Study – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Inder:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./p2css.css" />
+    <style>
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(30, 155, 190, 0.06);
+        transition: box-shadow 0.2s;
+      }
+      .header-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: 0 auto;
+        gap: 24px;
+        padding: 0 16px;
+      }
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo-section img {
+        width: 120px;
+        height: 78px;
+        object-fit: contain;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+      .hamburger span {
+        height: 4px;
+        width: 100%;
+        background: #1e9bbe;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: 0.3s;
+        display: block;
+      }
+      @media (max-width: 639px) {
+        nav {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 220px;
+          background: #fff;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 0;
+          padding: 80px 24px 24px 24px;
+          box-shadow: -2px 0 12px rgba(0, 0, 0, 0.08);
+          transform: translateX(100%);
+          transition: transform 0.3s ease;
+          z-index: 1000;
+        }
+        nav.open {
+          transform: translateX(0);
+        }
+        nav a {
+          font-size: 18px;
+          padding: 18px 0;
+          width: 100%;
+          border-bottom: 1px solid #eee;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .header-content {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="logo.png" alt="Zahra Mohammadinejad Logo" />
+          <p>Product Designer</p>
+        </div>
+        <div
+          class="hamburger"
+          id="hamburger-menu"
+          aria-label="Open menu"
+          tabindex="0"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav id="main-nav">
+          <a href="index.html" class="active">Work</a>
+          <a href="about.html">About</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container">
+          <div class="hero-media">
+            <img
+              src="cover2.png"
+              alt="MacBook Pro mockup showing dashboard interface"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="section">
+        <div class="container section-split">
+          <div class="section-label">Overview</div>
+          <div class="section-content">
+            <h1 class="h1">
+              Analysis, Design, and Implementation of a Management Dashboard for
+              a Road Construction Supervision Company
+            </h1>
+
+            <div class="stack-lg">
+              <h3 class="h3">Project Summary</h3>
+              <p class="lead">
+                I worked as a Product Designer in Raha Consulting to lead an
+                extremely sluggish, manual reporting method into a more
+                efficient centralized, real-time executive dashboard. This was a
+                collaboration, where Raha Consulting was working in conjunction
+                with a large road construction supervision firm across the
+                nation. The overall project aimed to resolve delays with
+                executive decisions when they would try to reconcile what were
+                critical project KPI's for their construction projects and
+                assess if they fit into efficiencies and whether they were on
+                track or ahead of budget.
+                <br /><br />
+                I did not design the actual UI, but I did sketch the initial
+                wireframes, and worked closely with the UI designer to ensure
+                the interface aligned with user experience and business
+                priorities.
+              </p>
+            </div>
+
+            <div class="details-grid">
+              <div class="detail">
+                <div class="eyebrow">My Role</div>
+                <div class="stack-sm">
+                  <div>
+                    <div class="body stack-xs">Product Designer</div>
+                  </div>
+                  <div>
+                    <div class="body stack-xs">Collaboration Lead</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="eyebrow">Timeline</div>
+                <p class="body">~8 Months</p>
+              </div>
+
+              <div class="detail">
+                <div class="eyebrow">Team</div>
+                <div class="body stack-xs">
+                  <div>Product designer(me)</div>
+                  <div>Product Manager(1)</div>
+                  <div>UI designer(1)</div>
+                  <div>Back-end(1)</div>
+                  <div>front-end developer(2)</div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="eyebrow">Tools</div>
+                <div class="body stack-xs">
+                  <div><strong>User Research:</strong> Google Forms</div>
+                  <div><strong>Design:</strong> Figma, Visio</div>
+                  <div>
+                    <strong>User Testing:</strong> In-person, Google Meet,
+                    WhatsApp
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Understanding -->
+      <section class="section">
+        <div class="container section-split">
+          <div class="section-label">Understanding</div>
+          <div class="section-content">
+            <div class="stack-lg">
+              <h3 class="h3">Key Challenges</h3>
+              <p class="body">
+                There was a manual and distributed reporting, in the form of
+                emails, WhatsApp, and Excel spreadsheets, which introduced
+                delays of 3-5 days, and often produced incomplete or outdated
+                reports. Because the reports were not systematically compiled
+                into an overview, the CEO was unable to get a timely,
+                centralized insight regarding performance, especially in
+                discussions with government stakeholders.
+              </p>
+            </div>
+
+            <div class="stack-lg">
+              <h3 class="h3">
+                Pre-Dashboard Reporting Process (As-Is Workflow)
+              </h3>
+              <p class="body">
+                I constructed a flow diagram of the existing process to see
+                where potential bottlenecks would occur:
+              </p>
+              <div class="media-center">
+                <img
+                  src="Pre-dashboard reporting(As-is-flow).png"
+                  alt="Workflow diagram showing the pre-dashboard reporting process"
+                />
+              </div>
+              <p class="body">
+                This flow presented a report that was very manual, disjointed,
+                and time-consuming, relying on human memory and ad hoc
+                communications, with the possibility of delay, mistakes, and
+                inconsistency.
+              </p>
+            </div>
+
+            <div class="stack-lg">
+              <h3 class="h3">Persona</h3>
+              <p class="body">
+                I constructed a flow diagram of the existing process to see
+                where potential bottlenecks would occur:
+              </p>
+              <div class="media-center">
+                <img
+                  src="UserPersona.png"
+                  alt="User persona showing CEO needs and pain points"
+                />
+              </div>
+              <p class="body center strong">
+                This quote captured the urgency and precision the dashboard
+                needed to deliver.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Define -->
+      <section class="section">
+        <div class="container section-split">
+          <div class="section-label">Define</div>
+          <div class="section-content">
+            <div class="stack-lg">
+              <h3 class="h3">Identifying & Prioritizing Needs + KPIs</h3>
+              <p class="body">
+                I conducted interviews with the CEO, project managers, and
+                technical leads and audited some past reports to figure out
+                which KPIs were going to be the most impactful. Working with the
+                business analyst and product manager, we created a matrix of
+                KPIs, ordered them based on how often we planned to gather the
+                data, score in terms of importance, and whether we had the data
+                available or not. This matrix guided us to a focus on the
+                metrics that would deliver the most impact to the organization.
+              </p>
+              <div class="media-center">
+                <img
+                  src="KPI table.JPG"
+                  alt="KPI prioritization matrix showing importance and data availability"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ideation & Exploration -->
+      <section class="section">
+        <div class="container section-split">
+          <div class="section-label">Ideation & Exploration</div>
+          <div class="section-content">
+            <div class="stack-lg">
+              <h3 class="h3">
+                Sketching, Brainstorming, and User Flow Mapping
+              </h3>
+              <p class="body">
+                Before moving onto the Figma wireframes stage, I led and
+                participated in initial ideation sessions to uncover potential
+                design directions and gain insight into user needs.
+              </p>
+              <p class="body">
+                🧠 Brainstorming workshops with stakeholders and team members to
+                solidify the dashboard priorities and features
+              </p>
+
+              <div class="brainstorm-grid">
+                <img src="Context & Goal.png" />
+                <img
+                  src="Stakeholder Questions.png"
+                  alt="Stakeholder Questions notes"
+                />
+                <img
+                  src="Feature Ideas.png"
+                  alt="Feature Ideas brainstorming"
+                />
+                <img
+                  src="Opportunities.png"
+                  alt="Opportunities identification"
+                />
+                <img src="Pain Points.png" alt="Pain Points analysis" />
+              </div>
+
+              <p class="body">
+                🔄 User flow diagrams to visualize the unique ways various user
+                roles would (or could) interact with the dashboard, particularly
+                the executives
+              </p>
+              <div class="media-center">
+                <img
+                  src="UserFlow.png"
+                  alt="User flow diagram for dashboard interaction"
+                />
+              </div>
+            </div>
+
+            <div class="stack-lg">
+              <h3 class="h3">Wireframing & UX Structure</h3>
+              <p class="body">
+                The wireframing component began as paper sketches during the
+                initial brainstorm workshops where I explored many layouts and
+                dashboard structures based on stakeholder priorities. The paper
+                sketches were rough, but they served their purpose of getting
+                everyone aligned on deliberate components before transitioning
+                to digital form.
+              </p>
+              <div class="media-center">
+                <img src="33.jpg" alt="Hand-drawn wireframe sketches" />
+              </div>
+              <p class="body">
+                These are selected low-fidelity Figma wireframes, shown as part
+                of the full set created during the wireframing process.
+              </p>
+
+              <div class="wireframes-grid">
+                <img src="Dashboard.png" alt="Dashboard wireframe" />
+                <img src="projectlist.png" alt="Project list wireframe" />
+                <img src="reportcreate.png" alt="Report create wireframe" />
+                <img src="report.png" alt="Report wireframe" />
+                <img src="projectgrid.png" alt="Project grid wireframe" />
+                <img src="setting.png" alt="Settings wireframe" />
+                <img src="team.png" alt="Team wireframe" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final UI Design -->
+      <section class="section">
+        <div class="container section-split">
+          <div class="section-label">Final UI Design (Team Delivery)</div>
+          <div class="section-content">
+            <p class="body">
+              Although I did not design the final UI, I collaborated closely
+              with the UI designer to ensure the final dashboard reflected the
+              user needs and priorities identified during research and ideation.
+            </p>
+            <div class="media-center">
+              <img src="cover2.png" alt="Final UI design mockup on MacBook" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implementation & Validation -->
+      <section class="section">
+        <div class="container section-split">
+          <div class="section-label">Implementation & Validation</div>
+          <div class="section-content">
+            <p class="body">
+              The dashboard made a significant difference in day-to-day
+              operations. These metrics captured its measurable impact:
+            </p>
+            <div class="media-center">
+              <img
+                src="final metrics.JPG"
+                alt="Implementation metrics showing dashboard impact"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reflection -->
+      <section class="section section-last">
+        <div class="container section-split">
+          <div class="section-label">Reflection</div>
+          <div class="section-content">
+            <p class="body">This project reinforced a number of insights:</p>
+            <ul class="body bullet-list">
+              <li>
+                Executive-facing dashboards must be simple, fast and trusted.
+              </li>
+              <li>
+                Wireframing is not simply for design work, it is also part of
+                strategic planning.
+              </li>
+              <li>
+                Designers, business intelligence analysts and developers must
+                work closely to ensure the final product accommodates the
+                expectations of a real-world situation.
+              </li>
+              <li>
+                Designing for stakeholders who operate under extreme pressure
+                (like a CEO) requires empathy and simplicity at the core of the
+                experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
